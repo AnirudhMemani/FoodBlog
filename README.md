@@ -4,6 +4,10 @@ FoodBlog is a web application that allows users to share food-related content su
 
 ## Installation and Setup
 
+1. Clone the repository:
+
+``` git clone https://github.com/AnirudhMemani/FoodBlog.git ```
+
 ### Backend
 
 1. Change the directory to the backend folder:
