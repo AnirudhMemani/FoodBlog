@@ -1,0 +1,148 @@
+.container12 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container12::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://images.unsplash.com/photo-1486485764572-92b96f21882a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMGJsb2d8ZW58MHx8MHx8fDA%3D&w=1000&q=80")
+    no-repeat center;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+/* .containervalues {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  background-color: white;
+  margin-bottom: 70px;
+}
+
+.navbar {
+  width: 65%;
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.links a {
+  color: black;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.logo span {
+  color: #ffd615;
+}
+
+.logo h1 {
+  font-weight: 400;
+  font-size: 24px;
+  font-weight: 900;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+} */
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+
+.contentvalues {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  align-items: center;
+}
+
+.imghome {
+  width: 80%;
+  height: 100%;
+}
+
+.data {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffd615;
+}
+
+.datavalues {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  text-align: start;
+  height: 90%;
+  width: 80%;
+  line-height: 35px;
+}
+
+.datavalues p {
+  font-size: 24px;
+  max-width: 100%;
+}
+
+.datavalues h1 {
+  font-size: 60px;
+  font-weight: 900;
+  max-width: 80%;
+  line-height: 70px;
+}
+
+.datavalues button {
+  width: 38%;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: black;
+  border: none;
+  outline: none;
+  color: white;
+  box-shadow: 0px 24px 36px -11px rgba(0, 0, 0, 0.4);
+  transition: 400ms all ease-in-out 0s;
+  position: relative;
+  z-index: 1;
+}
+
+.datavalues button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(231, 4, 4);
+  z-index: -1;
+  transition: 300ms all ease-in-out 0s;
+}
+
+.datavalues button:hover::before {
+  right: unset;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.active {
+  opacity: 0.6;
+}

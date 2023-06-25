@@ -1,0 +1,161 @@
+.addfood {
+  position: relative;
+  height: 92vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden !important;
+}
+
+.foodie {
+  height: 80%;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.addfood::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("https://www.thegoodglow.ie/wp-content/uploads/2021/07/Berry-Coconut-Ice-Pops-Landscape-3-scaled.jpg")
+    no-repeat center;
+  background-size: cover;
+  filter: blur(10px);
+  z-index: -1;
+}
+
+.imgfood {
+  background: url("https://s3.envato.com/files/239870513/Preview%20Image%20Set/Slide1.JPG")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 50%;
+  height: 90%;
+}
+
+.formbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.8);
+  width: 50%;
+  height: 90%;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  width: 80%;
+}
+
+.form .inputboxes {
+  display: block;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid greenyellow;
+  /* box-shadow: 0px 1px 1px black; */
+  border-radius: 5px;
+  outline: none;
+  width: 100%;
+  padding: 15px 10px;
+  font-size: 16px;
+  font-family: sans-serif;
+  margin: 10px 0px;
+  transition: 300ms ease;
+  color: #fbceb5;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.form .inputboxes::placeholder {
+  text-transform: uppercase;
+  color: #fbceb5;
+  letter-spacing: 3px;
+  text-align: center;
+  font-size: 14px;
+  transition: 400ms ease;
+}
+
+.form .inputboxes:focus {
+  box-shadow: -2px 4px 3px rgb(13, 243, 70);
+}
+
+.form .inputboxes:focus::placeholder {
+  padding-left: 10px;
+  font-size: 12px;
+}
+
+.formbhai {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: start;
+  height: 80%;
+  width: 100%;
+}
+
+.btngroup {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 3rem;
+}
+
+.buttonzz {
+  position: relative;
+  padding: 0.6rem 30px;
+  text-transform: capitalize;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fbceb5;
+  transition: 300ms ease;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.buttonzz::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: unset;
+  right: 0;
+  width: 0px;
+  height: 100%;
+  padding: 0.6rem 0px;
+  background-color: greenyellow;
+  z-index: -1;
+  transition: 300ms all ease-in-out 0s;
+}
+
+.buttonzz:hover::before,
+.buttonzz:focus::before {
+  right: unset;
+  left: 0;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.buttonzz:hover,
+.buttonzz:focus {
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 700;
+}
+
+.buttonzz:active{
+  opacity: 0.6;
+  transition: 100ms ease;
+}
